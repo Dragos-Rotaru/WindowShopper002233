@@ -11,12 +11,12 @@ import UIKit
 
 struct Product: Codable {
 	var title: String
-	var description: String
+	var description: String?
 	var	id: String
 	var price: Double
 	var image: ImageWrapper?
 
-	public init(title: String, description: String, id: String, price: Double) {
+	public init(title: String, description: String? = nil, id: String, price: Double) {
 		self.title = title
 		self.description = description
 		self.id = id
@@ -24,7 +24,7 @@ struct Product: Codable {
 		self.image = nil
 	}
 
-	public init(title: String, description: String, id: String, price: Double, image: ImageWrapper) {
+	public init(title: String, description: String? = nil, id: String, price: Double, image: ImageWrapper) {
 		self.title = title
 		self.description = description
 		self.id = id

@@ -19,7 +19,6 @@ class TabBarController: UITabBarController {
 		UIView.animate(withDuration: 0.7, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
 			self.tabBar.subviews[item].subviews.first?.transform = CGAffineTransform(rotationAngle: -CGFloat.pi)
 			self.tabBar.subviews[item].subviews.first?.transform = CGAffineTransform(rotationAngle: 0)
-			//self.tabBar.subviews[item].transform = CGAffineTransform(rotationAngle: 0)
 		}, completion: nil)
 	}
 }
