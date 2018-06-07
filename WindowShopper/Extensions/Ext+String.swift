@@ -11,10 +11,15 @@ import Foundation
 extension String: Evaluatable {
 
 	func evaluate(with condition: String) -> Bool {
-		guard let range = range(of: condition, options: .regularExpression, range: nil, locale: nil) else {
+//		guard let range = range(of: condition, options: .regularExpression, range: nil, locale: nil) else {
+//			return false
+//		}
+//		return range.lowerBound == startIndex && range.upperBound == endIndex
+		if let _ = self.range(of: condition, options: .regularExpression, range: nil, locale: nil){
+			return true
+		} else {
 			return false
 		}
-		return range.lowerBound == startIndex && range.upperBound == endIndex
 	}
 	func isEmailValid(text: String) -> Bool {
 		let regexp = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
@@ -27,5 +32,9 @@ extension String: Evaluatable {
 	func isNumberOnly (text: String) -> Bool {
 		let regexp = "[0-9]{1,}"
 		return text.evaluate(with: regexp)
+	}
+	func isCorrectQuantity() -> Bool {
+		let regexp = "^[0-9]{1,3}$"
+		return self.evaluate(with: regexp)
 	}
 }
