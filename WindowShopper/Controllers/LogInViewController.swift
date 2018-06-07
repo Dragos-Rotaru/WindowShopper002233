@@ -23,6 +23,7 @@ class LogInViewController: UIViewController {
 		super.viewDidLoad()
 		self.usernameLabelTopConstraint.constant = -self.view.frame.height/2
 		self.logInButtonBottomConstraint.constant = -self.view.frame.height/2
+		self.dismissKeyboardOnOutsideTap()
 //		createGradientLayer(firstColor: UIColor(red: 71.0/255.0, green: 237.0/255.0, blue: 247.0/255.0, alpha: 1.0), secondColor: UIColor(red: 255.0/255.0, green: 16.0/255.0, blue: 89.0/255.0, alpha: 1.0))
 		animateLogIn()
 		// Do any additional setup after loading the view, typically from a nib.

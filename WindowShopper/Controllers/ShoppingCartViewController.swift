@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 class ShoppingCartViewController: UIViewController, UITableViewDelegate {
-	var products = [Product(title: "Corona Extra", description: "6 pack", id: "392103", price: 12.5, image: ImageWrapper(image: #imageLiteral(resourceName: "RandomBeer"))),
+	var products = [Product(title: "Corona Extra", description: nil, id: "392103", price: 12.5, image: ImageWrapper(image: #imageLiteral(resourceName: "RandomBeer"))),
 					Product(title: "Mere", description: "D'alea bune", id: "32afsdfk312", price: 9.8, image: ImageWrapper(image: #imageLiteral(resourceName: "Apple"))),
 					Product(title: "Lapte Dana", description: "0,5l", id: "1321djascmr09213asd",price: 25.0, image: ImageWrapper(image: #imageLiteral(resourceName: "Steak")))]
 
@@ -19,6 +19,7 @@ class ShoppingCartViewController: UIViewController, UITableViewDelegate {
 	override func viewDidLoad() {
 		tableview.tableFooterView = UIView()
 		configureNavigationBar()
+		self.dismissKeyboardOnOutsideTap()
 	}
 
 }
@@ -34,7 +35,8 @@ extension ShoppingCartViewController: UITableViewDataSource {
 			cell?.productTitleLabel.text = product.title
 			cell?.productDescriptionLabel.text = product.description
 			cell?.productImage.image = product.image?.image
-			cell?.priceLabel.text = String(product.price)
+			//cell?.priceLabel.text = String(product.price)
+			//cell?.calculateProductPrice(product: product)
 			cell?.configureCell()
 
 			return cell ?? UITableViewCell()
