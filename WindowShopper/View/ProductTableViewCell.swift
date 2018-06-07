@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class ProductTableViewCell: UITableViewCell, ShoppingCellProtocol {
+class ProductTableViewCell: UITableViewCell, ShoppingCellProtocol, UITextFieldDelegate {
 
 	@IBOutlet weak var productImage: UIImageView!
 	@IBOutlet weak var productTitleLabel: UILabel!
@@ -28,12 +28,20 @@ class ProductTableViewCell: UITableViewCell, ShoppingCellProtocol {
 			productQuantityTextField.text = String(quantity - 1)
 		}
 	}
-	func calculateProductPrice(product: Product) {
+
+	override func awakeFromNib() {
+		productQuantityTextField.delegate = self
+	}
+	func calculateProductPrice(product: Product, tableview: UITableView, indexPath: IndexPath) {
 		guard let text = productQuantityTextField.text,
 			  let quantity = Double(text) else {
 				//TODO: treat this case
-				preconditionFailure("Incorrect quantity format")
+				priceLabel.text = "0"
+				return
 		}
 		priceLabel.text = String("\(product.price * quantity)")
+	}
+	func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+		return Int(string) != nil
 	}
 }
