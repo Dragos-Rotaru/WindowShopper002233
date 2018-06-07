@@ -1,1 +1,6 @@
-/WindowShopper.xcodeproj/project.xcworkspace/xcuserdata/
+*.xcworkspacedata
+*.xcscheme
+xcschememanagement.plist
+*.xcuserstate
+*.xcbkptlist
+*.xcscheme
