@@ -9,6 +9,6 @@
 import Foundation
 import UIKit
 
-class TotalsTableViewCell: UITableViewCell, ShoppingCellProtocol {
+class TotalsTableViewCell: UITableViewCell, ConfigureCellProtocol {
 	@IBOutlet weak var totalPriceLabel: UILabel!
 }

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		8F5EEF5D20B6DD2300893EF6 /* Ext+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5EEF5C20B6DD2300893EF6 /* Ext+UIViewController.swift */; };
+		8F87FD2220CE7E4400AC606D /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F87FD2120CE7E4400AC606D /* AccountViewController.swift */; };
+		8F87FD2420CE99C200AC606D /* UserInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F87FD2320CE99C200AC606D /* UserInfoTableViewCell.swift */; };
+		8F87FD2620CE9A5A00AC606D /* AccountActionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F87FD2520CE9A5A00AC606D /* AccountActionTableViewCell.swift */; };
 		8FAFF84820B40660008FAFB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAFF84720B40660008FAFB3 /* AppDelegate.swift */; };
 		8FAFF84A20B40660008FAFB3 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAFF84920B40660008FAFB3 /* LogInViewController.swift */; };
 		8FAFF84D20B40660008FAFB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FAFF84B20B40660008FAFB3 /* Main.storyboard */; };
@@ -18,9 +21,11 @@
 		8FAFF86B20B40660008FAFB3 /* WindowShopperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAFF86A20B40660008FAFB3 /* WindowShopperUITests.swift */; };
 		8FC2152720B43AE900C0E7C8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC2152620B43AE900C0E7C8 /* NetworkManager.swift */; };
 		8FC65A3520BFDDBB00443279 /* TotalsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC65A3420BFDDBB00443279 /* TotalsTableViewCell.swift */; };
-		8FC65A3720BFF2C200443279 /* ShoppingCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC65A3620BFF2C200443279 /* ShoppingCellProtocol.swift */; };
+		8FC65A3720BFF2C200443279 /* ConfigureCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC65A3620BFF2C200443279 /* ConfigureCellProtocol.swift */; };
 		8FC65A3A20C0396F00443279 /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC65A3920C0396F00443279 /* CheckoutViewController.swift */; };
 		8FC65A3C20C03E5500443279 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC65A3B20C03E5500443279 /* User.swift */; };
+		8FD85E7C20CFB47D00753CF2 /* TextValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD85E7B20CFB47D00753CF2 /* TextValidation.swift */; };
+		8FD85E7E20CFDD1600753CF2 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD85E7D20CFDD1600753CF2 /* FavoritesViewController.swift */; };
 		8FD9205E20C51F4400C3B9DC /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD9205D20C51F4400C3B9DC /* Validatable.swift */; };
 		8FD9206020C5258200C3B9DC /* Ext+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD9205F20C5258200C3B9DC /* Ext+String.swift */; };
 		8FD9206220C53BBD00C3B9DC /* Ext+UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD9206120C53BBD00C3B9DC /* Ext+UITextField.swift */; };
@@ -51,6 +56,9 @@
 
 /* Begin PBXFileReference section */
 		8F5EEF5C20B6DD2300893EF6 /* Ext+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UIViewController.swift"; sourceTree = "<group>"; };
+		8F87FD2120CE7E4400AC606D /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		8F87FD2320CE99C200AC606D /* UserInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoTableViewCell.swift; sourceTree = "<group>"; };
+		8F87FD2520CE9A5A00AC606D /* AccountActionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountActionTableViewCell.swift; sourceTree = "<group>"; };
 		8FAFF84420B40660008FAFB3 /* WindowShopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WindowShopper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FAFF84720B40660008FAFB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FAFF84920B40660008FAFB3 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
@@ -67,9 +75,11 @@
 		8FAFF86C20B40660008FAFB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FC2152620B43AE900C0E7C8 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		8FC65A3420BFDDBB00443279 /* TotalsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalsTableViewCell.swift; sourceTree = "<group>"; };
-		8FC65A3620BFF2C200443279 /* ShoppingCellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCellProtocol.swift; sourceTree = "<group>"; };
+		8FC65A3620BFF2C200443279 /* ConfigureCellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureCellProtocol.swift; sourceTree = "<group>"; };
 		8FC65A3920C0396F00443279 /* CheckoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
 		8FC65A3B20C03E5500443279 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8FD85E7B20CFB47D00753CF2 /* TextValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextValidation.swift; sourceTree = "<group>"; };
+		8FD85E7D20CFDD1600753CF2 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		8FD9205D20C51F4400C3B9DC /* Validatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validatable.swift; sourceTree = "<group>"; };
 		8FD9205F20C5258200C3B9DC /* Ext+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+String.swift"; sourceTree = "<group>"; };
 		8FD9206120C53BBD00C3B9DC /* Ext+UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UITextField.swift"; sourceTree = "<group>"; };
@@ -139,19 +149,17 @@
 		8FAFF84620B40660008FAFB3 /* WindowShopper */ = {
 			isa = PBXGroup;
 			children = (
-				8FD9205C20C51F3100C3B9DC /* Protocols */,
-				8FE1FA6720BD962200E26530 /* View */,
-				8FE1FA6020BD509400E26530 /* Resources */,
 				8FE1FA5D20BD4F2B00E26530 /* Model */,
-				8F5EEF5B20B6DD0900893EF6 /* Extensions */,
+				8FE1FA6720BD962200E26530 /* View */,
 				8FC2152520B4358400C0E7C8 /* Controllers */,
+				8FD9205C20C51F3100C3B9DC /* Protocols */,
+				8FE1FA6020BD509400E26530 /* Resources */,
+				8F5EEF5B20B6DD0900893EF6 /* Extensions */,
 				8FAFF87820B40721008FAFB3 /* Networking */,
-				8FAFF84720B40660008FAFB3 /* AppDelegate.swift */,
-				8FAFF84B20B40660008FAFB3 /* Main.storyboard */,
-				8FAFF85120B40660008FAFB3 /* Assets.xcassets */,
-				8FAFF85320B40660008FAFB3 /* LaunchScreen.storyboard */,
+				8FD85E8120CFDD9400753CF2 /* Storyboards */,
 				8FAFF85620B40660008FAFB3 /* Info.plist */,
-				8FAFF84E20B40660008FAFB3 /* WindowShopper.xcdatamodeld */,
+				8FD85E7F20CFDD5300753CF2 /* Utils */,
+				8FD85E8020CFDD7B00753CF2 /* CoreData */,
 			);
 			path = WindowShopper;
 			sourceTree = "<group>";
@@ -190,15 +198,44 @@
 				8FE1FA6320BD715000E26530 /* TabBarController.swift */,
 				8FE1FA6520BD8CA900E26530 /* ShoppingCartViewController.swift */,
 				8FC65A3920C0396F00443279 /* CheckoutViewController.swift */,
+				8F87FD2120CE7E4400AC606D /* AccountViewController.swift */,
+				8FD85E7D20CFDD1600753CF2 /* FavoritesViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8FD85E7F20CFDD5300753CF2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8FAFF85120B40660008FAFB3 /* Assets.xcassets */,
+				8FAFF84720B40660008FAFB3 /* AppDelegate.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		8FD85E8020CFDD7B00753CF2 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				8FAFF84E20B40660008FAFB3 /* WindowShopper.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		8FD85E8120CFDD9400753CF2 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8FAFF84B20B40660008FAFB3 /* Main.storyboard */,
+				8FAFF85320B40660008FAFB3 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		8FD9205C20C51F3100C3B9DC /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				8FC65A3620BFF2C200443279 /* ShoppingCellProtocol.swift */,
+				8FC65A3620BFF2C200443279 /* ConfigureCellProtocol.swift */,
 				8FD9205D20C51F4400C3B9DC /* Validatable.swift */,
+				8FD85E7B20CFB47D00753CF2 /* TextValidation.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -225,6 +262,8 @@
 			children = (
 				8FE1FA6820BD964B00E26530 /* ProductTableViewCell.swift */,
 				8FC65A3420BFDDBB00443279 /* TotalsTableViewCell.swift */,
+				8F87FD2320CE99C200AC606D /* UserInfoTableViewCell.swift */,
+				8F87FD2520CE9A5A00AC606D /* AccountActionTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -363,11 +402,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F87FD2420CE99C200AC606D /* UserInfoTableViewCell.swift in Sources */,
 				8FC2152720B43AE900C0E7C8 /* NetworkManager.swift in Sources */,
 				8FE1FA6220BD50A100E26530 /* ImageWrapper.swift in Sources */,
 				8FAFF84A20B40660008FAFB3 /* LogInViewController.swift in Sources */,
 				8FE1FA6420BD715000E26530 /* TabBarController.swift in Sources */,
-				8FC65A3720BFF2C200443279 /* ShoppingCellProtocol.swift in Sources */,
+				8FD85E7C20CFB47D00753CF2 /* TextValidation.swift in Sources */,
+				8FC65A3720BFF2C200443279 /* ConfigureCellProtocol.swift in Sources */,
+				8F87FD2620CE9A5A00AC606D /* AccountActionTableViewCell.swift in Sources */,
 				8FD9205E20C51F4400C3B9DC /* Validatable.swift in Sources */,
 				8FE1FA6620BD8CA900E26530 /* ShoppingCartViewController.swift in Sources */,
 				8FC65A3A20C0396F00443279 /* CheckoutViewController.swift in Sources */,
@@ -375,10 +417,12 @@
 				8FC65A3C20C03E5500443279 /* User.swift in Sources */,
 				8FAFF84820B40660008FAFB3 /* AppDelegate.swift in Sources */,
 				8FE1FA6920BD964B00E26530 /* ProductTableViewCell.swift in Sources */,
+				8F87FD2220CE7E4400AC606D /* AccountViewController.swift in Sources */,
 				8FAFF85020B40660008FAFB3 /* WindowShopper.xcdatamodeld in Sources */,
 				8FD9206220C53BBD00C3B9DC /* Ext+UITextField.swift in Sources */,
 				8FE1FA5C20BD3A6800E26530 /* CameraViewController.swift in Sources */,
 				8FC65A3520BFDDBB00443279 /* TotalsTableViewCell.swift in Sources */,
+				8FD85E7E20CFDD1600753CF2 /* FavoritesViewController.swift in Sources */,
 				8FE1FA5F20BD4F3D00E26530 /* Product.swift in Sources */,
 				8FD9206020C5258200C3B9DC /* Ext+String.swift in Sources */,
 			);

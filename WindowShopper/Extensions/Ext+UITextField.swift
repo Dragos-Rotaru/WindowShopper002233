@@ -16,4 +16,16 @@ extension UITextField: Validatable {
 		return functions.lazy.map { function in
 			function(self.text ?? "") }.reduce(true) { $0 && $1 }
 	}
+	func isEmailValid(text: String) -> Bool {
+		let regexp = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+		return text.evaluate(with: regexp)
+	}
+	func isValidPassword(password: String) -> Bool {
+		let regexp = "^(?=.*[A-Z])(?=.*[!@#$&*])(?=.*[0-9])(?=.*[a-z]).{8}$"
+		return password.evaluate(with: regexp)
+	}
+	func isNumberOnly (text: String) -> Bool {
+		let regexp = "[0-9]{1,}"
+		return text.evaluate(with: regexp)
+	}
 }

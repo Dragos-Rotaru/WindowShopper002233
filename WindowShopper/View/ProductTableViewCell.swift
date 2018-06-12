@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class ProductTableViewCell: UITableViewCell, ShoppingCellProtocol {
+class ProductTableViewCell: UITableViewCell, ConfigureCellProtocol {
 
 	@IBOutlet weak var productImage: UIImageView!
 	@IBOutlet weak var productTitleLabel: UILabel!
