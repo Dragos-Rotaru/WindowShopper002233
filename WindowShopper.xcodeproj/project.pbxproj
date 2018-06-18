@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F3D61C620D268D500CE1DE9 /* FavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3D61C520D268D500CE1DE9 /* FavoriteTableViewCell.swift */; };
 		8F5EEF5D20B6DD2300893EF6 /* Ext+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5EEF5C20B6DD2300893EF6 /* Ext+UIViewController.swift */; };
 		8F87FD2220CE7E4400AC606D /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F87FD2120CE7E4400AC606D /* AccountViewController.swift */; };
 		8F87FD2420CE99C200AC606D /* UserInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F87FD2320CE99C200AC606D /* UserInfoTableViewCell.swift */; };
@@ -26,6 +27,7 @@
 		8FC65A3C20C03E5500443279 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC65A3B20C03E5500443279 /* User.swift */; };
 		8FD85E7C20CFB47D00753CF2 /* TextValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD85E7B20CFB47D00753CF2 /* TextValidation.swift */; };
 		8FD85E7E20CFDD1600753CF2 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD85E7D20CFDD1600753CF2 /* FavoritesViewController.swift */; };
+		8FD85E8520CFEECA00753CF2 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD85E8420CFEECA00753CF2 /* SettingsViewController.swift */; };
 		8FD9205E20C51F4400C3B9DC /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD9205D20C51F4400C3B9DC /* Validatable.swift */; };
 		8FD9206020C5258200C3B9DC /* Ext+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD9205F20C5258200C3B9DC /* Ext+String.swift */; };
 		8FD9206220C53BBD00C3B9DC /* Ext+UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD9206120C53BBD00C3B9DC /* Ext+UITextField.swift */; };
@@ -55,6 +57,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8F3D61C520D268D500CE1DE9 /* FavoriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewCell.swift; sourceTree = "<group>"; };
 		8F5EEF5C20B6DD2300893EF6 /* Ext+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UIViewController.swift"; sourceTree = "<group>"; };
 		8F87FD2120CE7E4400AC606D /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		8F87FD2320CE99C200AC606D /* UserInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoTableViewCell.swift; sourceTree = "<group>"; };
@@ -80,6 +83,7 @@
 		8FC65A3B20C03E5500443279 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		8FD85E7B20CFB47D00753CF2 /* TextValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextValidation.swift; sourceTree = "<group>"; };
 		8FD85E7D20CFDD1600753CF2 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		8FD85E8420CFEECA00753CF2 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		8FD9205D20C51F4400C3B9DC /* Validatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validatable.swift; sourceTree = "<group>"; };
 		8FD9205F20C5258200C3B9DC /* Ext+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+String.swift"; sourceTree = "<group>"; };
 		8FD9206120C53BBD00C3B9DC /* Ext+UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UITextField.swift"; sourceTree = "<group>"; };
@@ -154,7 +158,6 @@
 				8FC2152520B4358400C0E7C8 /* Controllers */,
 				8FD9205C20C51F3100C3B9DC /* Protocols */,
 				8FE1FA6020BD509400E26530 /* Resources */,
-				8F5EEF5B20B6DD0900893EF6 /* Extensions */,
 				8FAFF87820B40721008FAFB3 /* Networking */,
 				8FD85E8120CFDD9400753CF2 /* Storyboards */,
 				8FAFF85620B40660008FAFB3 /* Info.plist */,
@@ -194,12 +197,11 @@
 			isa = PBXGroup;
 			children = (
 				8FAFF84920B40660008FAFB3 /* LogInViewController.swift */,
-				8FE1FA5B20BD3A6800E26530 /* CameraViewController.swift */,
 				8FE1FA6320BD715000E26530 /* TabBarController.swift */,
-				8FE1FA6520BD8CA900E26530 /* ShoppingCartViewController.swift */,
-				8FC65A3920C0396F00443279 /* CheckoutViewController.swift */,
-				8F87FD2120CE7E4400AC606D /* AccountViewController.swift */,
-				8FD85E7D20CFDD1600753CF2 /* FavoritesViewController.swift */,
+				8FD85E8620CFEED600753CF2 /* Camera */,
+				8FD85E8320CFEEAE00753CF2 /* ShoppingCart */,
+				8FD85E8720CFEEDE00753CF2 /* Favorites */,
+				8FD85E8220CFEE9400753CF2 /* Account */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -230,6 +232,40 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
+		8FD85E8220CFEE9400753CF2 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				8F87FD2120CE7E4400AC606D /* AccountViewController.swift */,
+				8FD85E8420CFEECA00753CF2 /* SettingsViewController.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		8FD85E8320CFEEAE00753CF2 /* ShoppingCart */ = {
+			isa = PBXGroup;
+			children = (
+				8FE1FA6520BD8CA900E26530 /* ShoppingCartViewController.swift */,
+				8FC65A3920C0396F00443279 /* CheckoutViewController.swift */,
+			);
+			path = ShoppingCart;
+			sourceTree = "<group>";
+		};
+		8FD85E8620CFEED600753CF2 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				8FE1FA5B20BD3A6800E26530 /* CameraViewController.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		8FD85E8720CFEEDE00753CF2 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				8FD85E7D20CFDD1600753CF2 /* FavoritesViewController.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
 		8FD9205C20C51F3100C3B9DC /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
@@ -252,6 +288,7 @@
 		8FE1FA6020BD509400E26530 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8F5EEF5B20B6DD0900893EF6 /* Extensions */,
 				8FE1FA6120BD50A100E26530 /* ImageWrapper.swift */,
 			);
 			path = Resources;
@@ -264,6 +301,7 @@
 				8FC65A3420BFDDBB00443279 /* TotalsTableViewCell.swift */,
 				8F87FD2320CE99C200AC606D /* UserInfoTableViewCell.swift */,
 				8F87FD2520CE9A5A00AC606D /* AccountActionTableViewCell.swift */,
+				8F3D61C520D268D500CE1DE9 /* FavoriteTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -421,10 +459,12 @@
 				8FAFF85020B40660008FAFB3 /* WindowShopper.xcdatamodeld in Sources */,
 				8FD9206220C53BBD00C3B9DC /* Ext+UITextField.swift in Sources */,
 				8FE1FA5C20BD3A6800E26530 /* CameraViewController.swift in Sources */,
+				8F3D61C620D268D500CE1DE9 /* FavoriteTableViewCell.swift in Sources */,
 				8FC65A3520BFDDBB00443279 /* TotalsTableViewCell.swift in Sources */,
 				8FD85E7E20CFDD1600753CF2 /* FavoritesViewController.swift in Sources */,
 				8FE1FA5F20BD4F3D00E26530 /* Product.swift in Sources */,
 				8FD9206020C5258200C3B9DC /* Ext+String.swift in Sources */,
+				8FD85E8520CFEECA00753CF2 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

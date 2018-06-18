@@ -35,6 +35,8 @@ class CameraViewController: UIViewController {
 		productTitleLabel.isHidden = true
 		productFoundView.layer.cornerRadius = 15.0
 		productFoundView.clipsToBounds = true
+		productFoundView.alpha = 0.65
+		addToCartButton.alpha = 1
 		productFoundLeadingConstraint.constant = 363.0
 		productTitleLabel.text = ""
 		cameraImage.image = #imageLiteral(resourceName: "CameraScanner")
@@ -50,7 +52,7 @@ class CameraViewController: UIViewController {
 		UIView.animate(withDuration: 1.0, delay: 0.0, animations: {
 			self.productFoundView.layer.cornerRadius = 8.0
 			self.productFoundLeadingConstraint.constant = 20.0
-			self.productTitleLabel.text = "Item 1"
+			self.productTitleLabel.text = "Product title"
 			self.view.layoutIfNeeded()
 		})
 	}

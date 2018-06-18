@@ -23,7 +23,16 @@ class AccountViewController: UITableViewController {
 			case "Settings":
 				performSegue(withIdentifier: "settingsSegue", sender: sender)
 			case "Log Out":
-				performSegue(withIdentifier: "signOutSegue", sender: sender)
+				let alert = UIAlertController(title: "Sign Out", message: "Are you sure you want to sign out?", preferredStyle: .alert)
+				let okButton = UIAlertAction(title: "Yes", style: .default) {
+					[weak self]
+					action in
+						self?.performSegue(withIdentifier: "signOutSegue", sender: action)
+				}
+				let cancelButton = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+				alert.addAction(okButton)
+				alert.addAction(cancelButton)
+				present(alert, animated: true, completion: nil)
 			default:
 				break
 			}
@@ -66,5 +75,4 @@ class AccountViewController: UITableViewController {
 			return 44.0
 		}
 	}
-
 }
