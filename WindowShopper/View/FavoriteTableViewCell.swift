@@ -14,4 +14,5 @@ class FavoriteTableViewCell: UITableViewCell, ConfigureCellProtocol {
 	@IBOutlet weak var productTitleLabel: UILabel!
 	@IBOutlet weak var productDescriptionLabel: UILabel!
 	@IBOutlet weak var priceLabel: UILabel!
+	@IBOutlet weak var removeProductButton: UIButton!
 }

@@ -35,7 +35,6 @@ class CameraViewController: UIViewController {
 		productTitleLabel.isHidden = true
 		productFoundView.layer.cornerRadius = 15.0
 		productFoundView.clipsToBounds = true
-		productFoundView.alpha = 0.65
 		addToCartButton.alpha = 1
 		productFoundLeadingConstraint.constant = 363.0
 		productTitleLabel.text = ""
