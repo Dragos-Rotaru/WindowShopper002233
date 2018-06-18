@@ -31,6 +31,7 @@ class AccountViewController: UITableViewController {
 	}
 	//MARK: View lifecycle
 	override func viewDidLoad() {
+		tableView.tableFooterView = UIView()
 		configureNavigationBar()
 		user = User(companyName: "S.C. Companie S.R.L", email: "companie@office.com", companyID: "6859662")
 	}
